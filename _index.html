@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .row {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .myBox {
+            position: relative;
+            margin: 10px;
+            height: 200px;
+            /* width: 200px; */
+            background-color: red;
+            border: 5px solid yellow;
+        }
+
+        .label {
+            position: absolute;
+            background-color: yellow;
+            padding: 10px;
+            bottom: 50px;
+            left: 0;
+        }
+
+        #targetBox {
+            border-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">About me</div>
+            <div class="col-9">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod delectus dolorum tenetur
+                tempora temporibus, quaerat sapiente enim tempore magnam qui recusandae debitis nobis odio rem, veniam
+                eos.
+                Officia, fuga alias!</div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">Projects</div>
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="myBox" id="targetBox">
+                            <div class="label">Hello</div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="myBox">
+                            <div class="label">Hello</div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="myBox">
+                            <div class="label">Hello</div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="myBox">
+                            <div class="label">Hello</div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="myBox">
+                            <div class="label">Hello</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        
+
+    </div>
+
+</body>
+
+</html>
